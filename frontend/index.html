@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROMETHEE Ranking Tool</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/ranking.js" defer></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li><a href="#adicionar">Adicionar Alternativa</a></li>
+        <li><a href="#alternativas">Alternativas Salvas</a></li>
+        <li><a href="#ranking">Ranking Final</a></li>
+      </ul>
+    </div>
+    <div class="container" id="adicionar">
+      <h1>Adicionar Alternativa</h1>
+      <p class="subtitle">
+        Insira os valores para cada critério da nova alternativa.
+      </p>
+      <form id="numberForm">
+        <div id="inputs"></div>
+        <button type="submit">Salvar Alternativa</button>
+      </form>
+      <p id="message"></p>
+    </div>
+
+    <div class="container" id="alternativas">
+      <h2>Alternativas Salvas</h2>
+      <div class="table-container">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Critério 1</th>
+              <th>Critério 2</th>
+              <th>Critério 3</th>
+              <th>Critério 4</th>
+              <th>Critério 5</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="savedListsBody"></tbody>
+        </table>
+      </div>
+
+      <div class="actions-container">
+        <button
+          id="calculateRanking"
+          type="button"
+          disabled
+          onclick="sendData()"
+        >
+          Calcular Ranking
+        </button>
+        <button id="deleteAllBtn" type="button" onclick="deleteAllLists()">
+          Apagar TODAS
+        </button>
+      </div>
+    </div>
+    <div class="container" id="ranking">
+      <h2>Ranking Final (PROMETHEE II)</h2>
+      <ul id="rankingList"></ul>
+    </div>
+    <div class="container" id="container-graphic">
+      <button onclick="drawChart('bar')">Barra</button>
+      <button onclick="drawChart('line')">Linha</button>
+      <canvas id="rankingChart"></canvas>
+    </div>
+  </body>
+</html>
