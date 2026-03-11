@@ -132,7 +132,7 @@ DELETE `/delete_all`
   <img src="docs/alter_salva.png" width="700">
   <img src="docs/alter_salva2.png" width="700">
   <img src="docs/pop-it.png" width="700">
-  <img src="docs/ranking.png" width="700">
+  <img src="docs/Ranking.png" width="700">
 </p>
 
 ---
