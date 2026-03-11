@@ -95,6 +95,16 @@ DELETE `/delete/{id}`
 DELETE `/delete_all`
 
 ---
+## Interface
+
+<p align="center">
+  <img src="docs/alter_salva.png" width="700">
+  <img src="docs/alter_salva2.png" width="700">
+  <img src="docs/pop-it.png" width="700">
+  <img src="docs/ranking.png" width="700">
+</p>
+
+---
 ## Decision Method
 The ranking is calculated using the method:
 
@@ -108,6 +118,7 @@ S = [0.35, 0.33, 0.33, 0.5, 0.33]
 W = [4.00, 1.50, 1.00, 1.00, 1.50]
 ```
 ---
+
 ## 📄 License
 MIT License
 

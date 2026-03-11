@@ -127,6 +127,16 @@ DELETE `/delete_all`
 
 ---
 
+## Interface
+<p align="center">
+  <img src="docs/alter_salva.png" width="700">
+  <img src="docs/alter_salva2.png" width="700">
+  <img src="docs/pop-it.png" width="700">
+  <img src="docs/ranking.png" width="700">
+</p>
+
+---
+
 ## Método de decisão
 
 O ranking é calculado usando o método:
